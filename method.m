@@ -3,6 +3,7 @@ a0= a;
 b0= b;
 i =1;
 while((b-a)/2>eps)
+	ûפג
 end
 min = (a+b)/2;
 feval(f,min);
