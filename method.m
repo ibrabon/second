@@ -3,7 +3,19 @@ a0= a;
 b0= b;
 i =1;
 while((b-a)/2>eps)
-	ûפג
+	x1 = (a+b-delta)/2;
+	x2 = (a+b + delta)/2;
+	z = feval(f,x1);
+	n = feval (f,x2);
+	if(z < n)
+		b = x2;
+		
+	end
+	if(z > n)
+			a=x1;
+	end
+	d(i) = (a+b)/2;
+	i++;
 end
 min = (a+b)/2;
 feval(f,min);
